@@ -51,16 +51,6 @@ Let me optimize the algorithm to terminate early when we find a solution within 
 
 refundSelectorService.js
 
-Code ∙ Version 6 
-
-// Find best combination using recursive backtracking // Returns early when a satisfactory solution is found const findBestCombination = (items, targetCents, index = 0, memo = {}) => { // Create memo key based on current state const memoKey = `${
-
-refundSelectorService.js
-
-Code ∙ Version 7 
-
-// Main function to select optimal refund items const selectOptimalRefundItems = (items, targetAmount) => { // Convert target to cents const targetCents = eurosToCents(targetAmount); // Sort items by unit price descending for better performa
-
 I've optimized the algorithm to terminate as soon as it finds a solution that meets our criteria (exact match or within 20 cents over). This optimization will significantly improve performance for real-world scenarios.
 
 Key optimizations in the updated algorithm:
